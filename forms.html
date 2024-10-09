@@ -6,23 +6,57 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>Employees Form</h1>
     <form action="/submit-form" method="post">
         <fieldset>
-        <legend>Forms</legend>
+        <legend>please fill in</legend>
 
-<label for="name">Name</label>
-<input type="text" id="name" required>
+<label for="first-name">First Name</label>
+<input type="text" id="first-name" required>
 <br>
-<label for="dob">DOB</label>
-<input type="text" name="dob" id="dob" required>
+<label for="last-name">Last Name</label>
+<input type="text" name="last-name" id="last-name" required>
+<br>
+<label for="email">Email</label>
+<input type="email" name="email" id="email" placeholder="abc@12.com" required>
+<br>
+<label for="date">Date</label>
+<input type="date" name="date" id="date">
+<br>
+<label>Gender</label>
+<input type="radio" id="male" name="gender" value="male" checked>
+<label for="male">Male</label>
+<input type="radio" id="female" name="gender" value="female">
+<label for="female">Female</label>
 <br>
 <label for="department">Department</label>
-<input type="text" name="department" id="department">
+<select name="departnment" id="department">
+    <option value="">select</option>
+    <option value="technology">Software Engieering</option>
+    <option value="business">Manager</option>
+    <option value="owner">Director</option>
+    <option value="accounts">Accountant</option>
+</select>
 <br>
-<label for="role">role</label>
-<input type="text" name="role" id="role">
+<label for="salary">salary</label>
+<input type="number" name="salary" id="salary" max="1000000" min="10000">
+<br>
+<label for="comments">Comments</label>
+<textarea name="message" id="comments" cols="100"
+rows="10">Leave comments</textarea>
+<br>
+<label for="password">Password</label>
+<input type="password" name="pssword" id="password" required>
 </fieldset>
 
+<br>
+<label>Reviews</label>
+<input type="range" min="0" max="100">
+<br>
+<label>Favourite color</label>
+<input type="color">
+<br>
+<button type="submit">Submit</button>
     </form>
 </body>
 </html>
