@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="form-flex.css">
+</head>
+<body>
+  <h1><u>Student Registration Form</u></h1> 
+  
+  <legend>Register</legend> 
+  <form>
+  <div class="form-section">
+    <div class="form-row">
+        <div>
+            <label for="FirststName">First Name</label>
+            <br>
+            <input type="text" required>
+        </div>
+        <div>
+            <label for="middleName">Middle Name</label>
+            <br>
+            <input type="text" name="middleName" id="middleName" required>
+        </div>
+        <div>
+          <label for="lastName">Last Name</label>
+    <br>
+    <input type="text" required>
+</div>
+
+</div>
+<div class="form-row">
+    <div>
+        <label for="phone">Phone</label>
+        <br> <select name="phone" id="phone">
+            
+            <option value="number">+254</option>
+            <option value="number">+256</option>
+            <option value="number">+255</option>
+            <option value="number">Select</option>
+        </select>
+        <input type="number" id="phone" step="9" placeholder="7 (9 digits)"  size="9" required>
+        
+    </div>
+    <div>
+    <label for="email">Email</label>
+    <br>
+    <input type="email" id="email">
+</div>
+
+
+</div>
+<div class="form-row">
+    <div>
+  <label for="age">Age</label>
+  <br>
+  <input type="number" id="age" min="18" max="35" required>
+</div>
+<div>
+    <label>Gender</label>
+    <br>
+    <input type="radio" id="female" checked>
+    <label for="female">Female</label>
+    <input type="radio" id="male">
+    <label for="male">Male</label>
+</div>
+<div>
+    <label for="nationality">Nationality</label>
+    <br>
+    <input type="checkbox" name="kenya" id="kenya" checked>
+    <label for="kenya">Kenya</label>
+    <input type="checkbox" name="tanzania" id="tanzania">
+    <label for="tanzania">Tanzania</label>
+    <input type="checkbox" name="uganda" id="uganda">
+    <label for="uganda">Uganda</label>
+</div>
+</div>
+<div class="form-row">
+<button>Submit</button>
+</div>
+  </div>
+</form>
+</body>
+</html>
