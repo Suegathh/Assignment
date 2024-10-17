@@ -1,0 +1,32 @@
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    background-color: #458df9;
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
+    padding: 7px;
+    
+}
+.item{
+    background-color: azure;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    
+}
+#header{
+    grid-area: 1 / 1 / 1 / 6;
+}
+#menu{
+    grid-area: 2 / 1 / 6 / 1;
+}
+#main{
+    grid-area: 2 / 2 / 2 / 4;
+}
+#right{
+    grid-area: 2 / 4 / 2 / 6;
+}
+#footer{
+    grid-area: 3 / 2 / 6 / 6;
+}
+
