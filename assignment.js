@@ -1,29 +1,33 @@
-let year = 2021
+function checkLeapYear(year){
 if (year % 4==0){
     console.log('leap year')
 } else{
     console.log('not a leap year')
 }
-let price = 10
+}
+function checkDiscount(price){
 if(price >= 100){
-    console.log('discount is 20')
+    console.log(20) 
 
 } else if(price >= 50){
-    console.log('discount is 10')
+    console.log(10)
 }
 else{
-    console.log('discount is 0')
-}
-let age = 20
+   console.log(0)
+}}
+function checkTicket(age){
 if(age < 12){
-    console.log('ticket price is 5')
+    return 5
 }
 else if(age < 18){
-    console.log('ticket price is 10')
+    return 10
 }
 else if(age < 60){
-    console.log('ticket price is 20')
+   return 20
 }
 else{
-    console.log('ticket price is 15')
-}
+    return 0
+}}
+checkLeapYear(2019)
+console.log(checkDiscount(60))
+checkTicket(27)
